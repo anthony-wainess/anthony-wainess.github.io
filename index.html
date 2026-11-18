@@ -1,16 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Career Portfolio</title>
+    <title>Career Portfolio | Anthony Wainess</title>
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
-    />  
+    />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <h1>Anthony Wainess</h1>
-    <p>This is my career portfolio.</p>
+    <header class="site-header">
+      <nav class="container" aria-label="Main navigation">
+        <ul>
+          <li><a class="brand" href="/"><strong>Career Portfolio</strong></a></li>
+        </ul>
+        <ul>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="container">
+      <section class="centered" aria-labelledby="intro-heading">
+        <h1 id="intro-heading">Hi, I'm Anthony Wainess</h1>
+        <p>
+          Welcome to my career portfolio! Here, you can learn more about me, my projects, and physics/maths.
+        </p>
+      </section>
+
+      <section aria-labelledby="mission-heading">
+        <h2 id="mission-heading">Mission</h2>
+        <p>
+          My mission... lorem ipsum dolor sit amet consectetur adipiscing elit vero in mollitia sit quas in adipiscing dolor duis repellendus et aut labore qui occaecat omnis corrupti dolor est et distinctio odio enim temporibus sunt deserunt omnis id et distinctio aliqua consequat facere dignissimos harum at est reprehenderit dolore in sunt voluptate
+        </p>
+      </section>
+
+      <section aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <div class="grid">
+          <article class="project-card">
+            <h3>Technical</h3>
+            <ul>
+              <li>Skill 1</li> 
+              <li>Skill 2</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <h3>Programming</h3>
+            <ul>
+              <li>Python</li>
+              <li>C</li>
+              <li>Julia</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <h3>Tools</h3>
+            <ul>
+              <li>[Tool you have used]</li>
+              <li>[Another relevant tool]</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Selected Projects</h2>
+        <div class="grid">
+          <article class="project-card">
+              <figure>
+                <img
+                  src="/assets/images/Perseverance.jpeg"
+                  alt="University Rover Challenge"
+                  width="800"
+                  height="450"
+                  loading="lazy"
+                />
+              </figure>
+            <h3>University Rover Challenge</h3>
+            <p>
+              Brief description of the challenge, what you contributed, and the result.
+            </p>
+            <p><a href="/projects/project1.html">See project details</a></p>
+          </article>
+        
+          <article class="project-card">
+            <h3>Project 2</h3>
+            <p>
+              Brief description of the challenge, what you contributed, and the result.
+            </p>
+            <p><a href="/projects/project2.html">See project details</a></p>
+          </article>
+        </div>
+      </section>      
+    </main>
+
+    <footer class="container">
+        <small>© 2026 Anthony Wainess · <a href="https://github.com/anthony-wainess">GitHub</a></small>
+    </footer>
   </body>
 </html>

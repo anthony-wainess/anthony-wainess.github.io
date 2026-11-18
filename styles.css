@@ -1,0 +1,61 @@
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --pico-background-color: #101820;
+  --pico-color: #e8eef3;
+  --pico-muted-color: #adbac7;
+  --pico-muted-border-color: #2b3946;
+  --pico-primary: #72d7e8;
+  --pico-primary-hover: #a3ecf4;
+  --portfolio-surface: #18232d;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--pico-muted-border-color);
+}
+
+.site-header nav {
+  padding-block: 0.75rem;
+}
+
+.site-header .brand {
+  color: var(--pico-color);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.site-header nav ul:last-child a {
+  border-radius: 0.5rem;
+  padding: 0.45rem 0.7rem;
+  text-decoration: none;
+}
+
+.site-header nav ul:last-child a:hover,
+.site-header nav ul:last-child a:focus-visible {
+  background: var(--pico-muted-border-color);
+}
+
+.project-card {
+  background: var(--portfolio-surface);
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: 0.75rem;
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.project-card:hover {
+  border-color: var(--pico-primary);
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card {
+    transition: none;
+  }
+
+  .project-card:hover {
+    transform: none;
+  }
+}
+
+.centered {
+  text-align: center;
+}
